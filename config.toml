@@ -3,32 +3,36 @@ title = "Remember"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
-disqusShortname = "https-zsdotkr-github-io" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+# disqusShortname = "https-zsdotkr-github-io" # Enable comments by entering your Disqus shortname
+googleAnalytics = "UA-128688878-1" # Enable Google Analytics by entering your tracking id
+#pygmentsUseClassic=true
+pygmentsCodefences=true
+pygmentsStyle="friendly"
+#pygmentsStyle="trac"
 
+#pygmentsUseClasses=true
 [Author] # Used in authorbox
   name = "zsdotkr"
-  bio = "Sailng through... will find someday"
+  bio = "Sailing through... will find something"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "Sailng through... will find someday" # Subtitle of your site. Used in site header
+  subtitle = "Sailing through... will find sonething" # Subtitle of your site. Used in site header
   description = "zsdtkr's personal blog" # Site description. Used in meta description
   #copyright = "John Doe" # copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
   authorbox = false # Show authorbox at bottom of pages if true
-  toc = true # Enable Table of Contents
+  toc = false # Enable Table of Contents
   post_navigation = true # Show post navigation at bottom of pages if true
-  # post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
+  post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
   postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
   #postSections = ["blog", "news"] # alternative that shows more than one section's pages
-  #dateformat = "2006-01-02" # change the format of dates
+  dateformat = "2006-01" # change the format of dates
   #mathjax = true # Enable MathJax
   #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
   #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-
 [Params.sidebar]
   home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
@@ -38,7 +42,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
 
 [Params.widgets.social]
   # Enable parts of social widget
@@ -51,3 +59,5 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   # bitbucket = "username"
   email = "zsdotkr@gmail.com"
   # google_plus = "profileid"
+
+
