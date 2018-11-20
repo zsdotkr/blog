@@ -9,6 +9,7 @@ googleAnalytics = "UA-128688878-1" # Enable Google Analytics by entering your tr
 pygmentsCodefences=true
 pygmentsStyle="friendly"
 #pygmentsStyle="trac"
+enableEmoji=true
 
 #pygmentsUseClasses=true
 [Author] # Used in authorbox
